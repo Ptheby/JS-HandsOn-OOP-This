@@ -10,37 +10,38 @@ class Car {
         this. year = year
     }
     displayInfo() {
-        console.log(Object.keys(this));
+        console.log(` ${this.year} ${this.make} ${this.model}`);
     }
 }
-new Car ("Toyota", "4Runner", 2023).displayInfo();
+const newCar= new Car ("Toyota", "4Runner", 2013);
+newCar.displayInfo();
 
 //Understanding 'this' in Depth:
 
 // Exercise 2.1: Craft a regular function within an object, then invoke it. Observe the behavior of "this". --not sure i did this one corectly invoking in console log outside of it. using myObject
 
 
-const myObject = {
-    firstName: 'Paul',
-    age: 37,
-    agePlus: function () {
-    return this.age + 100
-    }
-};
+// const myObject = {
+//     firstName: 'Paul',
+//     age: 37,
+//     agePlus: function () {
+//     return this.age + 100
+//     }
+// };
     
  
    
-console.log(`hello, my name is ${myObject.firstName} and I will be ${myObject.agePlus()} in 100 years!`)
+// console.log(`hello, my name is ${myObject.firstName} and I will be ${myObject.agePlus()} in 100 years!`)
 
-// Exercise 2.2: Create an arrow function within another object. Execute it and note the behavior of "this".
+// // Exercise 2.2: Create an arrow function within another object. Execute it and note the behavior of "this".
 
-const objectTwo= {
-    lastName: "Theby"
-    sayHello: hello()=> {
-        return console.log(`Hello! + ${this.lastName}`)
-    }
+// const objectTwo= {
+//     lastName: "Theby"
+//     sayHello: hello()=> {
+//         return console.log(`Hello! + ${this.lastName}`)
+//     }
    
-};
+// };
 
 
 
