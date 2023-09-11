@@ -40,7 +40,7 @@ const objectTwo= {
         return console.log(`Hello! + ${this.lastName}`)
     }
    
-}
+};
 
 
 
