@@ -138,8 +138,25 @@ class Student {
     }
 }
  const Student1= new Student("Mckenna", 7);
- Student1.displayInfo();
+ Student1.displayInfo();//Hello MCkenna
+
 
 
 
 // Exercise 4.2: Construct a function that demonstrates the differences between using "this" in arrow functions and regular functions, especially when they are methods inside a class or object.
+
+const myObject = {
+    name: "Paul",
+    saying: function() {
+        console.log(`${this.name} says Hello!`) 
+    }
+}
+myObject.saying();////in this case "this" identifies with the myObject object 
+
+const myObject2 = {
+    name: "Paul";
+    ()=> {
+        console.log(`${this.name} says Hello!`) 
+    }
+}
+myObject2S();
