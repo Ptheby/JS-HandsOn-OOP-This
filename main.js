@@ -119,4 +119,27 @@ class ElectricCar extends Car {
 
 }
 const electricCar = new ElectricCar("Tesla", "Model T", 2021, 75);
-electricCar.displayBatteryLife();
+electricCar.displayBatteryLife();//Battery Life: 75 kWh
+
+
+
+
+// //Challenges:
+
+// Exercise 4.1: Design a class "Student". Create an instance method that uses "this" to access the student's properties. Observe how "this" behaves within the class context.
+
+class Student {
+    constructor(firstName, grade) {
+        this.firstName= firstName;
+        this.grade= grade;
+    }
+    displayInfo() {
+        console.log(`Hello ${this.firstName}`);
+    }
+}
+ const Student1= new Student("Mckenna", 7);
+ Student1.displayInfo();
+
+
+
+// Exercise 4.2: Construct a function that demonstrates the differences between using "this" in arrow functions and regular functions, especially when they are methods inside a class or object.
